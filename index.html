@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Тестовое задание</title>
+
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header fix-block">
+  <div class="container header__container">
+    <div class="header__menu">
+      <nav class="nav" data-menu>
+        <ul class="nav__list list-reset">
+          <a href="#" class="nav__item nav__item-icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#logo-menu"></use>
+            </svg>
+          </a>
+          <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Преимущества</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Примеры работ</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Монтаж</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Ответы на вопросы</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__info">
+      <div class="header__info-left">
+        <div class="header__info-item info__descr" data-da=".nav,992,1">
+          <p>
+            <span>Кровельные и фасадные материалы</span> в Тюмени и области.
+          </p>
+          <p>Профессиональный монтаж с 2010 года.</p>
+        </div>
+        <div class="header__info-item info__link" data-da=".nav,992,last">
+          <span>Pdf</span>
+          <a href="#">Скачать прайс-каталог</a>
+        </div>
+      </div>
+      <div class="header__info-logo info-logo">
+        <picture>
+          <source srcset="img/form-logo.avif" type="image/avif" />
+          <source srcset="img/form-logo.webp" type="image/webp" />
+          <img
+            loading="lazy"
+            src="img/form-logo.png"
+            class="image logo-form"
+            width="250"
+            height="150"
+            alt="logo"
+          />
+        </picture>
+        <a href="#">
+          <picture>
+            <source srcset="img/logo.avif" type="image/avif" />
+            <source srcset="img/logo.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="img/logo.png"
+              class="image logo-img"
+              width="150"
+              height="100"
+              alt="logo"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="header__info-right">
+        <div class="header__info-item info__social" data-da=".nav,992,3">
+          <span class="info__social-figure"
+            >Отвечаем <span class="info__social-weight">онлайн</span>
+          </span>
+          <div class="info__icons">
+            <a
+              href="https://viber.me/"
+              class="info__icon info__icon--viber-bg"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="img/sprite.svg#viber"></use>
+              </svg>
+            </a>
+
+            <a
+              href="https://wa.me/"
+              class="info__icon info__icon--whatsapp-bg"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </a>
+
+            <a
+              href="https://telegram.me/"
+              class="info__icon info__icon--telegram-bg"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="header__info-item info__call">
+          <div class="info__working">
+            <span class="info__call-days">Пн-Пт</span>
+            <span class="info__call-time">09.00 — 18.00</span>
+            <span class="info__call-days">Сб</span>
+            <span class="info__call-time">10.00 — 18.00</span>
+          </div>
+          <a class="info__call-number" href="tel:88002225460"
+            >8 (800) 222-54-60</a
+          >
+          <div class="info__call-link">
+            <a href="#">Позвоните мне</a>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    </div>
+  </body>
+</html>
