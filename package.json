@@ -11,7 +11,8 @@
     "cache": "gulp cache",
     "backend": "gulp backend",
     "zip": "gulp zip",
-    "code": "editorconfig-checker"
+    "code": "editorconfig-checker",
+    "deploy": "gh-pages -d app"
   },
   "author": "Vitaly Reutsky",
   "license": "ISC",
