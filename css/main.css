@@ -722,6 +722,9 @@ h6 {
   }
 }
 @media (max-width: 576px) {
+  .nav {
+    top: 100px;
+  }
   .info__working {
     font-size: 10px;
   }
