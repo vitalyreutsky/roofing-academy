@@ -1,0 +1,163 @@
+.hero {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-bottom: 2vw;
+
+  &__inner {
+    padding-top: 17vw;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__benefits {
+    width: 15vw;
+    box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
+    background-color: var(--light-color);
+    margin-right: 5vw;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__descr {
+    width: 40vw;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 1.5;
+    margin-bottom: 3vw;
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__subtitle-figure {
+    display: inline-block;
+    width: 0.7vw;
+    height: 0.7vw;
+    border-radius: 100vw;
+    border: 0.2vw solid var(--green-color);
+    opacity: 0.8;
+    margin-right: 0.5vw;
+    &:nth-child(2) {
+      opacity: 0.6;
+    }
+    &:nth-child(3) {
+      opacity: 0.3;
+    }
+    &:nth-child(4) {
+      opacity: 0.2;
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+    h4 {
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+      font-size: 2vw;
+      margin-left: 1vw;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    margin-bottom: 3vw;
+  }
+
+  &__btn {
+    &:not(:last-child) {
+      margin-right: 1vw;
+    }
+  }
+
+  &__text {
+    width: 19vw;
+    display: flex;
+    p {
+      text-align: center;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__text-icon {
+    margin-right: 0.5vw;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0.1vw;
+      left: -0.3vw;
+      width: 0.5vw;
+      height: 0.5vw;
+      background-color: var(--orange-color);
+      border-radius: 100vw;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -0.1vw;
+      left: -0.5vw;
+      width: 0.9vw;
+      height: 0.9vw;
+      background-color: var(--orange-color);
+      opacity: 0.5;
+      border-radius: 100vw;
+    }
+    svg {
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+  }
+}
+
+.benefits {
+  padding: 3vw 2vw;
+  display: flex;
+  flex-direction: column;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 2.5vw;
+      position: relative;
+      padding-bottom: 2vw;
+      box-shadow: 0px 13px 18px -22px rgb(159, 162, 164);
+      position: relative;
+    }
+  }
+
+  &__item-text {
+    text-align: center;
+    font-size: 0.9vw;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+.btn {
+}
+.btn-reset {
+}
+.btn--primary {
+}
+.btn--secondary {
+}
+
+@include tablet {
+  .hero__text {
+    width: 50%;
+  }
+}
+
