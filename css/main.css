@@ -557,7 +557,7 @@ h6 {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .header .nav {
+  .nav {
     position: absolute;
     padding: 20px 0px;
     background-color: var(--light-color);
@@ -575,72 +575,81 @@ h6 {
     -ms-transform: translateY(-150%);
     transform: translateY(-150%);
   }
-  .header .nav__list {
+  .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 50px;
   }
-  .header .nav__item {
+  .nav__item {
     margin-bottom: 17px;
   }
-  .header .nav__item-icon svg {
+  .nav__item-icon svg {
     width: 30px;
     height: 30px;
   }
-  .header .nav__link {
+  .nav__link {
     font-size: 20px;
   }
-  .header .nav__link::after {
+  .nav__link::after {
     height: 2px;
   }
-  .header .menu--active {
+  .menu--active {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
-  .header .burger {
+  .burger {
     display: block;
+    --burger-width: 25px;
+    --burger-height: 23px;
+    --burger-line-height: 4px;
+    top: 20px;
   }
-  .header .info__descr {
+  .burger::before, .burger::after {
+    border-radius: 5px;
+  }
+  .burger__line {
+    border-radius: 5px;
+  }
+  .info__descr {
     margin-right: 0;
     width: 100%;
     margin-bottom: 30px;
   }
-  .header .info__descr p {
+  .info__descr p {
     text-align: center;
     font-size: 16px;
   }
-  .header .info__descr p span {
+  .info__descr p span {
     font-weight: 600;
   }
-  .header .info__descr p:not(:last-child) {
+  .info__descr p:not(:last-child) {
     margin-bottom: 0px;
   }
-  .header .info__link {
+  .info__link {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 30px;
   }
-  .header .info__link span {
+  .info__link span {
     font-size: 15px;
     width: 20px;
     height: 20px;
     margin-right: 15px;
   }
-  .header .info__link a {
+  .info__link a {
     font-size: 15px;
     border-bottom: 2px dotted var(--green-color);
   }
-  .header .header__info-logo {
+  .header__info-logo {
     position: relative;
-    top: -20px;
     width: 100px;
     height: 100px;
   }
-  .header .logo-form {
+  .logo-form {
     position: static;
     top: 0;
     left: 0;
@@ -650,7 +659,7 @@ h6 {
     width: 100%;
     height: 100%;
   }
-  .header .logo-img {
+  .logo-img {
     position: absolute;
     top: 33%;
     left: 50%;
@@ -659,38 +668,38 @@ h6 {
     transform: translate(-50%, -50%);
     width: 80px;
   }
-  .header .info__social {
+  .info__social {
     margin-right: 0;
   }
-  .header .info__social span {
+  .info__social span {
     font-size: 15px;
     margin-bottom: 10px;
   }
-  .header .info__social-figure {
+  .info__social-figure {
     padding-left: 10px;
   }
-  .header .info__social-figure::before {
+  .info__social-figure::before {
     width: 7px;
     height: 7px;
   }
-  .header .info__icon {
+  .info__icon {
     width: 50px;
     height: 50px;
   }
-  .header .info__icon svg {
+  .info__icon svg {
     width: 30px;
     height: 30px;
   }
-  .header .info__icon svg:not(:last-child) {
+  .info__icon svg:not(:last-child) {
     margin-right: 0;
   }
-  .header .info__working {
+  .info__working {
     font-size: 13px;
     position: relative;
     padding-left: 20px;
     margin-bottom: 10px;
   }
-  .header .info__working::before {
+  .info__working::before {
     content: "";
     position: absolute;
     left: 0;
@@ -703,13 +712,32 @@ h6 {
     border-radius: 100%;
     background-color: var(--green-color);
   }
-  .header .info__call-number {
+  .info__call-number {
     font-size: 25px;
     margin-bottom: 10px;
   }
   .info__call-link a {
     font-size: 20px;
     border-bottom: 1px dotted var(--green-color);
+  }
+}
+@media (max-width: 576px) {
+  .info__working {
+    font-size: 10px;
+  }
+  .info__call-number {
+    font-size: 15px;
+  }
+  .info__call-link a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 300px) {
+  .info__working span {
+    display: block;
+  }
+  .info__working::before {
+    display: none;
   }
 }
 .hero {
