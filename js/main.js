@@ -12,6 +12,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger */ "./src/js/components/burger.js");
 /* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/dynamic_adapt */ "./src/js/components/dynamic_adapt.js");
 /* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_benefits_show__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/benefits-show */ "./src/js/components/benefits-show.js");
+/* harmony import */ var _components_benefits_show__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_benefits_show__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -123,6 +126,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
 
+
+/***/ }),
+
+/***/ "./src/js/components/benefits-show.js":
+/*!********************************************!*\
+  !*** ./src/js/components/benefits-show.js ***!
+  \********************************************/
+/***/ (() => {
+
+const benefitsBtn = document.querySelector(".benefits__btn");
+const benefitsHero = document.querySelector(".hero__benefits");
+benefitsBtn.addEventListener("click", () => {
+  benefitsHero.classList.add("benefits--show");
+});
 
 /***/ }),
 
