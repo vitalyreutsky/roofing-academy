@@ -247,7 +247,7 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
 }
 .header__menu {
@@ -706,6 +706,7 @@ h6 {
   }
   .header__info-logo {
     position: relative;
+    top: -30px;
     width: 100px;
     height: 100px;
   }
@@ -726,7 +727,7 @@ h6 {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 80px;
+    width: 90px;
   }
   .info__social {
     margin-right: 0;
@@ -798,14 +799,10 @@ h6 {
 @media (max-width: 300px) {
   .info__working span {
     display: block;
+    font-size: 8px;
   }
   .info__working::before {
     display: none;
-  }
-}
-@media (max-width: 300px) {
-  .info__working span {
-    font-size: 8px;
   }
   .info__call-number {
     font-size: 10px;
@@ -977,7 +974,7 @@ h6 {
 
 @media (max-width: 992px) {
   .hero {
-    height: 100vh;
+    min-height: 100vh;
     padding: 0px 20px;
     position: relative;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#edf2f5)), url("../img/bg.jpg");
@@ -1116,7 +1113,7 @@ h6 {
     margin-right: 30px;
   }
   .benefits__item {
-    max-width: 200px;
+    max-width: 230px;
   }
   .benefits__item:not(:last-child) {
     margin-bottom: 15px;
