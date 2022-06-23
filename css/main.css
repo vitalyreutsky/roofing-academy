@@ -292,8 +292,8 @@ h6 {
 }
 .graph-modal__close svg {
   fill: var(--grey-color);
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 .graph-modal__content {
   padding: 30px 50px;
@@ -349,7 +349,7 @@ h6 {
 
 .form__title {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -395,8 +395,8 @@ h6 {
   left: 0;
   top: 0;
   background-color: var(--orange-color);
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 3px;
@@ -406,8 +406,8 @@ h6 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='fi_32282' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' fill='white' viewBox='0 0 405.272 405.272' style='enable-background:new 0 0 405.272 405.272;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z'%3E%3C/path%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
@@ -1110,13 +1110,13 @@ h6 {
   margin-right: 1vw;
 }
 .hero__text {
-  width: 19vw;
+  width: 21vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .hero__text p {
-  font-size: 15px;
+  font-size: 0.9vw;
   text-align: center;
 }
 .hero__text p span {
@@ -1191,7 +1191,7 @@ h6 {
 }
 .benefits__item-text {
   text-align: center;
-  font-size: 0.9vw;
+  font-size: 0.8vw;
 }
 .benefits__item-text span {
   font-weight: 600;
@@ -1280,6 +1280,8 @@ h6 {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 20px;
+  }
+  .hero__text p {
     font-size: 14px;
   }
   .hero__text-icon {
@@ -1355,7 +1357,7 @@ h6 {
     padding-bottom: 20px;
   }
   .benefits__item-text {
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
   }
 }
