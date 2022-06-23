@@ -383,7 +383,7 @@ h6 {
   position: absolute;
 }
 .custom-checkbox__content {
-  padding-left: 25px;
+  padding-left: 35px;
   cursor: pointer;
 }
 .custom-checkbox__content::before {
@@ -396,7 +396,7 @@ h6 {
   height: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 .custom-checkbox__content::after {
   content: "";

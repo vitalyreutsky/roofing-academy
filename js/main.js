@@ -449,11 +449,6 @@ const validateForms = (selector, rules, afterSend) => {
   }
 
   const validation = new just_validate__WEBPACK_IMPORTED_MODULE_0__["default"](selector);
-
-  for (let item of rules) {
-    validation.addField(item.ruleSelector, item.rules);
-  }
-
   validation.onSuccess(ev => {
     let formData = new FormData(ev.target);
     let xhr = new XMLHttpRequest();
