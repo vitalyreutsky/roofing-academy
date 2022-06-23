@@ -1,14 +1,15 @@
 .btn {
   color: var(--light-color);
   padding: 1.5vw 4vh;
-  width: 23vw;
-  height: 6vw;
+  width: 21vw;
+  height: 5vw;
   border-radius: 3.5vw;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   font-weight: 600;
   line-height: 1.5;
   transition: all 0.4s;
@@ -31,5 +32,86 @@
   background-color: var(--orange-color);
   &:hover {
     background-color: #fd9c49;
+  }
+}
+
+@include tablet {
+  .btn {
+    padding: 30px 75px;
+    width: 500px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 15px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.benefits__btn {
+  display: none;
+  background-color: var(--orange-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 100;
+  animation: shadow-pule 1s infinity;
+  outline: none;
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--light-color);
+  }
+
+  &::before,
+  ::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #f77d13c0;
+    border-radius: 100%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  &::before {
+    animation: pulse 0.9s ease-out infinite;
+  }
+
+  &::after {
+    animation: pulse 0.9s 1s ease-out infinite;
+  }
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@include tablet {
+  .benefits__btn {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 10px;
+  }
+  .btn--primary {
+    margin-bottom: 20px;
+  }
+}
+
+@include mobile {
+  .btn {
+    padding: 30px 40px;
+    width: 100%;
+    font-size: 11px;
+    height: 30px;
   }
 }
