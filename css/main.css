@@ -212,8 +212,10 @@ h6 {
   height: 50px;
   border-radius: 50%;
   position: relative;
+  z-index: 100;
   -webkit-animation: shadow-pule 1s infinity;
   animation: shadow-pule 1s infinity;
+  outline: none;
 }
 .benefits__btn svg {
   width: 20px;
@@ -224,6 +226,8 @@ h6 {
 .benefits__btn ::after {
   content: "";
   position: absolute;
+  top: 0px;
+  right: 0px;
   height: 100%;
   width: 100%;
   background-color: rgba(247, 125, 19, 0.7529411765);
@@ -257,17 +261,10 @@ h6 {
 }
 @media (max-width: 992px) {
   .benefits__btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 10px;
   }
   .btn--primary {
     margin-bottom: 20px;
@@ -1043,13 +1040,8 @@ h6 {
   align-items: center;
 }
 .hero__benefits {
-  width: 15vw;
+  width: 13vw;
   margin-right: 5vw;
-  -webkit-box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
-  box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
-  background-color: var(--light-color);
-  border: 1px solid #000;
-  border-radius: 15px;
 }
 .hero__main {
   display: -webkit-box;
@@ -1159,29 +1151,41 @@ h6 {
 }
 
 .benefits {
-  padding: 3vw 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 0 0 2vw 2vw;
+  -webkit-box-shadow: 0px 0px 28px 10px rgba(163, 172, 178, 0.2);
+  box-shadow: 0px 0px 28px 10px rgba(163, 172, 178, 0.2);
+  padding: 0px 2vw 2vw 2vw;
+  background-color: var(--light-color);
 }
-.benefits__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.benefits__items::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 5vw;
+  border-radius: 2vw 2vw 0 0;
+  background-color: var(--light-color);
+  -webkit-box-shadow: 0px -15px 28px 10px rgba(216, 222, 225, 0.2);
+  box-shadow: 0px -15px 28px 10px rgba(216, 222, 225, 0.2);
+  -webkit-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  transform: skewY(5deg);
 }
 .benefits__item:not(:last-child) {
   position: relative;
-  padding-bottom: 1.5vw;
+  padding-bottom: 2.3vw;
   -webkit-box-shadow: 0px 13px 18px -22px rgb(159, 162, 164);
   box-shadow: 0px 13px 18px -22px rgb(159, 162, 164);
   position: relative;
+  margin-bottom: 20px;
 }
 .benefits__item-text {
   text-align: center;
@@ -1304,14 +1308,6 @@ h6 {
     -webkit-transform: translateY(77%);
     -ms-transform: translateY(77%);
     transform: translateY(77%);
-    width: 80%;
-    -webkit-box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
-    box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
-    background-color: var(--light-color);
-    margin-right: 0px;
-    -webkit-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    transition: all 0.7s;
   }
   .benefits--show {
     -webkit-transform: translateY(0);
@@ -1327,13 +1323,30 @@ h6 {
     transition: all 0.7s;
   }
   .benefits {
-    padding: 30px 30px 20px;
+    border-radius: 0 0 2vw 2vw;
+    padding: 0px20px 20px;
+    -webkit-box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
+    background-color: var(--light-color);
+    margin-right: 0px;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    width: 250px;
   }
   .benefits__items {
-    margin-right: 30px;
+    padding-top: 30px;
+  }
+  .benefits__items::before {
+    top: -40px;
+    height: 60px;
+    border-radius: 20px 20px 0 0;
+    -webkit-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    transform: skewY(5deg);
   }
   .benefits__item {
-    max-width: 230px;
+    max-width: 180px;
   }
   .benefits__item:not(:last-child) {
     margin-bottom: 15px;
