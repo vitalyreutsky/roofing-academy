@@ -239,7 +239,8 @@ h6 {
   .btn {
     padding: 30px 40px;
     width: 100%;
-    font-size: 12px;
+    font-size: 11px;
+    height: 30px;
   }
 }
 .header {
@@ -1002,7 +1003,7 @@ h6 {
     margin-bottom: 30px;
   }
   .hero__descr .hero__title {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
   .hero__descr .hero__subtitle {
@@ -1012,7 +1013,7 @@ h6 {
     justify-content: center;
   }
   .hero__descr .hero__subtitle h4 {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 10px;
   }
   .hero__subtitle-figure {
@@ -1048,6 +1049,7 @@ h6 {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 14px;
   }
   .hero__text-icon {
     margin-right: 0px;
@@ -1073,12 +1075,13 @@ h6 {
   .hero__benefits {
     position: absolute;
     z-index: 1;
-    bottom: -30%;
+    bottom: -35%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100%;
+    max-width: 80%;
     -webkit-box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
     box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
     background-color: var(--light-color);
