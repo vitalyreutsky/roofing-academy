@@ -138,7 +138,7 @@ __webpack_require__.r(__webpack_exports__);
 const benefitsBtn = document.querySelector(".benefits__btn");
 const benefitsHero = document.querySelector(".hero__benefits");
 benefitsBtn.addEventListener("click", () => {
-  benefitsHero.classList.add("benefits--show");
+  benefitsHero.classList.toggle("benefits--show");
 });
 
 /***/ }),
