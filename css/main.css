@@ -148,8 +148,8 @@ h6 {
 .btn {
   color: var(--light-color);
   padding: 1.5vw 4vh;
-  width: 23vw;
-  height: 6vw;
+  width: 21vw;
+  height: 5vw;
   border-radius: 3.5vw;
   text-align: center;
   display: -webkit-box;
@@ -162,7 +162,7 @@ h6 {
   -ms-flex-align: center;
   align-items: center;
   text-transform: uppercase;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   font-weight: 600;
   line-height: 1.5;
   -webkit-transition: all 0.4s;
@@ -614,15 +614,14 @@ h6 {
   }
   .nav {
     position: absolute;
-    padding: 20px 0px;
     background: -moz-linear-gradient(0deg, rgb(255, 255, 255), rgb(86, 181, 184));
     background-color: #eff5f9;
-    top: 130px;
+    top: 125px;
     left: 0;
     z-index: 2;
-    padding: 0px 10px;
+    padding: 20px 10px;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     -webkit-transition: -webkit-transform 0.6s;
     transition: -webkit-transform 0.6s;
     -o-transition: transform 0.6s;
@@ -637,7 +636,7 @@ h6 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .nav__item {
     margin-bottom: 17px;
@@ -647,7 +646,7 @@ h6 {
     height: 30px;
   }
   .nav__link {
-    font-size: 20px;
+    font-size: 17px;
   }
   .nav__link::after {
     height: 2px;
@@ -821,9 +820,9 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .hero__benefits {
   width: 15vw;
@@ -842,13 +841,13 @@ h6 {
   flex-direction: column;
 }
 .hero__descr {
-  width: 40vw;
+  width: 36vw;
 }
 .hero__title {
   font-weight: normal;
   font-size: 3vw;
   line-height: 1.5;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
 }
 .hero__title span {
   font-weight: 600;
@@ -878,20 +877,20 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
 }
 .hero__subtitle h4 {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  font-size: 2vw;
+  font-size: 1.6vw;
   margin-left: 1vw;
 }
 .hero__btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
 }
 .hero__btn:not(:last-child) {
   margin-right: 1vw;
@@ -903,6 +902,7 @@ h6 {
   display: flex;
 }
 .hero__text p {
+  font-size: 15px;
   text-align: center;
 }
 .hero__text p span {
@@ -957,9 +957,9 @@ h6 {
   flex-direction: column;
 }
 .benefits__item:not(:last-child) {
-  margin-bottom: 2.5vw;
+  margin-bottom: 2vw;
   position: relative;
-  padding-bottom: 2vw;
+  padding-bottom: 1.5vw;
   -webkit-box-shadow: 0px 13px 18px -22px rgb(159, 162, 164);
   box-shadow: 0px 13px 18px -22px rgb(159, 162, 164);
   position: relative;
@@ -996,6 +996,7 @@ h6 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-bottom: 100px;
   }
   .hero__main {
     -webkit-box-align: center;
@@ -1081,9 +1082,9 @@ h6 {
     position: absolute;
     bottom: 0;
     z-index: 3;
-    -webkit-transform: translateY(80%);
-    -ms-transform: translateY(80%);
-    transform: translateY(80%);
+    -webkit-transform: translateY(77%);
+    -ms-transform: translateY(77%);
+    transform: translateY(77%);
     width: 80%;
     -webkit-box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
     box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
