@@ -291,7 +291,7 @@ modalClose.forEach(btn => {
   });
 }); //проверка checkbox
 
-checkbox.addEventListener("focus", () => {
+checkbox.addEventListener("change", () => {
   formBtn.addEventListener("click", e => {
     e.preventDefault();
 
@@ -331,20 +331,17 @@ __webpack_require__.r(__webpack_exports__);
 
     if (menu !== null && menu !== void 0 && menu.classList.contains('menu--active')) {
       burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-expanded', 'true');
-      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Закрыть меню');
-      (0,_functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
+      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Закрыть меню'); //disableScroll();
     } else {
       burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-expanded', 'false');
-      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Открыть меню');
-      (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
+      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Открыть меню'); //enableScroll();
     }
   });
   overlay === null || overlay === void 0 ? void 0 : overlay.addEventListener('click', () => {
     burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-expanded', 'false');
     burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Открыть меню');
     burger.classList.remove('burger--active');
-    menu.classList.remove('menu--active');
-    (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
+    menu.classList.remove('menu--active'); //enableScroll();
   });
   menuItems === null || menuItems === void 0 ? void 0 : menuItems.forEach(el => {
     el.addEventListener('click', () => {
