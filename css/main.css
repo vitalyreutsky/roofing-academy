@@ -437,6 +437,8 @@ h6 {
 .modal__success-title {
   color: var(--orange-color);
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 576px) {
@@ -1219,7 +1221,7 @@ h6 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
   .hero__main {
     -webkit-box-align: center;
@@ -1324,7 +1326,7 @@ h6 {
   }
   .benefits {
     border-radius: 0 0 2vw 2vw;
-    padding: 0px20px 20px;
+    padding: 0px 20px 20px;
     -webkit-box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
     box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
     background-color: var(--light-color);
