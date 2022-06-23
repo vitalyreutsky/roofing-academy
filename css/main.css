@@ -281,14 +281,17 @@ h6 {
     height: 30px;
   }
 }
+.graph-modal {
+  padding: 0px 15px;
+}
 .graph-modal__container {
-  max-width: 50%;
+  max-width: 500px;
   border-radius: 30px;
 }
 .graph-modal__close {
   outline: none;
   top: 20px;
-  right: 20px;
+  right: 25px;
 }
 .graph-modal__close svg {
   fill: var(--grey-color);
@@ -296,7 +299,7 @@ h6 {
   height: 30px;
 }
 .graph-modal__content {
-  padding: 30px 15px;
+  padding: 30px 50px;
 }
 
 .modal__working {
@@ -410,7 +413,7 @@ h6 {
   height: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='fi_32282' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='405.272px' height='405.272px' viewBox='0 0 405.272 405.272' style='enable-background:new 0 0 405.272 405.272;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z'%3E%3C/path%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='fi_32282' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' fill='white' viewBox='0 0 405.272 405.272' style='enable-background:new 0 0 405.272 405.272;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z'%3E%3C/path%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
   background-position: center;
   background-size: 10px 10px;
   background-repeat: no-repeat;
@@ -427,12 +430,23 @@ h6 {
 
 .custom-checkbox__content {
   font-weight: 500;
+  padding-left: 30px;
 }
 .custom-checkbox__content span {
   color: var(--orange-color);
   display: inline-block;
 }
 
+.modal__success-title {
+  color: var(--orange-color);
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .graph-modal__content {
+    padding: 20px 10px;
+  }
+}
 .header {
   position: absolute;
   top: 0;
@@ -619,13 +633,22 @@ h6 {
 .info__icon--viber-bg {
   background-color: #976fcc;
 }
+.info__icon--viber-bg:hover {
+  background-color: #6c479e;
+}
 
 .info__icon--whatsapp-bg {
   background-color: #12c868;
 }
+.info__icon--whatsapp-bg:hover {
+  background-color: #1aaf5f;
+}
 
 .info__icon--telegram-bg {
   background-color: #05a0eb;
+}
+.info__icon--telegram-bg:hover {
+  background-color: #128dcb;
 }
 
 .info__icons {
@@ -639,6 +662,9 @@ h6 {
   height: 2.3vw;
   border-radius: 100vw;
   position: relative;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .info__icon svg {
   position: absolute;
@@ -936,6 +962,9 @@ h6 {
     height: 50px;
   }
   .info__icon svg {
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
     width: 30px;
     height: 30px;
   }
