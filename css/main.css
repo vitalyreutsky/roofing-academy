@@ -694,9 +694,11 @@ h6 {
   }
   .info__link span {
     font-size: 15px;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     margin-right: 15px;
+    border-radius: 100%;
+    background-color: var(--light-color);
   }
   .info__link a {
     font-size: 15px;
@@ -977,7 +979,6 @@ h6 {
   .hero {
     height: 100%;
     padding: 0px 20px;
-    padding-bottom: 150px;
     position: relative;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#edf2f5)), url("../img/bg.jpg");
     background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), #edf2f5), url("../img/bg.jpg");
@@ -1075,7 +1076,7 @@ h6 {
   .hero__benefits {
     position: absolute;
     z-index: 1;
-    bottom: -35%;
+    bottom: -5%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -1113,7 +1114,15 @@ h6 {
     text-align: left;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 576px) {
+  .hero__benefits {
+    bottom: -30%;
+  }
+}
+@media (max-width: 376px) {
+  .hero__benefits {
+    bottom: -50%;
+  }
   .hero__descr .hero__title {
     font-size: 21px;
   }
@@ -1126,6 +1135,22 @@ h6 {
   }
   .hero__text {
     max-width: 100%;
+  }
+}
+@media (max-width: 340px) {
+  .hero__inner {
+    padding-bottom: 100px;
+  }
+  .hero__benefits {
+    bottom: -75%;
+  }
+}
+@media (max-width: 300px) {
+  .hero__inner {
+    padding-bottom: 120px;
+  }
+  .hero__benefits {
+    bottom: -63%;
   }
 }
 /*# sourceMappingURL=main.css.map */
