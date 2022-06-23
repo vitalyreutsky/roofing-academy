@@ -278,9 +278,6 @@ h6 {
     height: 30px;
   }
 }
-.graph-modal {
-  padding: 0px 15px;
-}
 .graph-modal__container {
   max-width: 500px;
   border-radius: 30px;
