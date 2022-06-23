@@ -1083,6 +1083,7 @@ h6 {
   .hero__benefits {
     position: absolute;
     bottom: 0;
+    z-index: 3;
     -webkit-transform: translateY(80%);
     -ms-transform: translateY(80%);
     transform: translateY(80%);
@@ -1096,9 +1097,6 @@ h6 {
     transition: all 0.7s;
   }
   .benefits--show {
-    -webkit-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    transition: all 0.7s;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
@@ -1107,6 +1105,9 @@ h6 {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
   }
   .benefits {
     padding: 30px 30px 20px;
@@ -1142,13 +1143,12 @@ h6 {
   }
 }
 @media (max-width: 340px) {
-  .hero__inner {
+  .hero {
+    min-height: 700px;
     padding-bottom: 100px;
   }
-}
-@media (max-width: 300px) {
-  .hero__inner {
-    padding-bottom: 120px;
+  .benefits__item-text {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=main.css.map */
